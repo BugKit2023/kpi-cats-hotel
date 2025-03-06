@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './App.scss';
 import {Header} from "./components/header/Header";
-import {WhyWe} from "./components/why-we/WhyWe";
+import {WhyUs} from "./components/why-us/WhyUs";
 import {WhatWeOffer} from "./components/what-we-offer/WhatWeOffer";
 import {Booking} from "./components/booking/Booking";
 import {WhoWeAre} from "./components/who-we-are/WhoWeAre";
@@ -29,7 +29,7 @@ function App() {
                     <ModalWindow message={modalWindowMessage} onClose={handleCloseModalWindow} />
                 )}
                 <WhoWeAre onModalWindowOpen={handleShowModalWindow}/>
-                <WhyWe/>
+                <WhyUs/>
                 <WhatWeOffer/>
                 <Booking/>
             </div>

@@ -16,7 +16,7 @@ const navItem = {
 export const NavigationBar = () => {
     return (
         <div style={navigation}>
-            <a href="#why-we" className="nav-link" style={navItem}>Why We</a>
+            <a href="#why-us" className="nav-link" style={navItem}>Why Us</a>
             <a href="#what-we-offer" className="nav-link" style={navItem}>What We Offer</a>
             <a href="#booking" className="nav-link" style={navItem}>Booking</a>
         </div>

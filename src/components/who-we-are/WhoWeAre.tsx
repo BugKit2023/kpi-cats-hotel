@@ -2,7 +2,7 @@ import React from "react";
 import catImage from '../../assets/cat-background.png'
 import {EmailForm} from "./EmailForm";
 
-const container = {
+const container: React.CSSProperties = {
     backgroundColor: '#5BE3A8',
     display: 'flex',
     alignItems: 'center'

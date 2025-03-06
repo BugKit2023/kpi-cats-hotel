@@ -1,15 +1,15 @@
 import React, {ChangeEvent, FormEvent, useState} from "react";
 
-export const formContainer = {
+export const formContainer: React.CSSProperties = {
     maxWidth: '200px',
     margin: 'auto',
     padding: '20px'
 }
-export const formInput = {
+export const formInput: React.CSSProperties = {
     width: '100%',
     padding: '8px'
 }
-export const label = {
+export const label: React.CSSProperties = {
     color: '#18282E',
     fontFamily: 'Roboto',
     marginBottom: '5px',
