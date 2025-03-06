@@ -5,7 +5,7 @@ import './WhyUs.css'
 export const WhyUs = () => {
     return (
         <>
-            <div id="why-us">
+            <section id="why-us">
                 <h1 style={{fontSize: '22px', marginBottom: '30px'}}>WHY US?</h1>
                 <div style={{fontSize: '18px', marginBottom: '30px'}}>
                     At our Cat Hotel, we pride ourselves on providing the highest quality care for your furry friends.
@@ -17,7 +17,7 @@ export const WhyUs = () => {
                 <div>
                     <Gallery/>
                 </div>
-            </div>
+            </section>
         </>
     )
 }

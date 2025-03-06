@@ -10,13 +10,17 @@ import mouseImage from '../../assets/mouse.svg'
 import birdImage from '../../assets/bird.svg'
 import heartImage from '../../assets/heart.svg'
 
-const getDate = (date: Date): string => {
+function getDate(date: Date): string {
     const year: number = date.getFullYear();
     const month: string = (date.getMonth() + 1).toString().padStart(2, '0');
     const day: string = date.getDate().toString().padStart(2, '0');
 
     return `${year}-${month}-${day}`;
 };
+
+function generateBookingNumber(): number {
+    return Math.floor(Math.random() * (999999 - 100000 + 1)) + 100000;
+}
 
 export const Booking = ({onModalWindowOpen}) => {
     const today: Date = new Date();
@@ -44,12 +48,12 @@ export const Booking = ({onModalWindowOpen}) => {
     };
 
     const handleSubmit = (event) => {
-        onModalWindowOpen('Thanks! Your booking is ready.');
+        onModalWindowOpen(`Thank you for the order! Your booking number is ${generateBookingNumber()}.`);
         setCurrentStep(1);
     };
 
     return (
-        <>
+        <section>
             <div id="booking" className="booking-container">
                 <h1 style={{fontSize: '22px', marginBottom: '30px'}}>BOOKING</h1>
                 {currentStep === 1 && (
@@ -118,6 +122,6 @@ export const Booking = ({onModalWindowOpen}) => {
                     </div>
                 )}
             </div>
-        </>
+        </section>
     )
 }

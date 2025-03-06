@@ -6,7 +6,7 @@ import './Header.css';
 export const Header = () => {
     return (
         <>
-            <div id="header">
+            <header id="header">
                 <div id="logo">
                     <LogoIcon width={50} height={45} style={{'paddingRight': '5px'}}/>
                     <div>KOTEL</div>
@@ -14,7 +14,7 @@ export const Header = () => {
                 <div>
                     <NavigationBar/>
                 </div>
-            </div>
+            </header>
         </>
     )
 }

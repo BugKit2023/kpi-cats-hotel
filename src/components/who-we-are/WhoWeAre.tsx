@@ -6,7 +6,7 @@ import './WhoWeAre.css';
 export const WhoWeAre = ({onModalWindowOpen}) => {
     return (
         <>
-            <div id="who-we-are" >
+            <section id="who-we-are">
                 <div style={{'width': '50%'}}>
                     <div id="text" >
                         <div>KOTEL</div>
@@ -17,7 +17,7 @@ export const WhoWeAre = ({onModalWindowOpen}) => {
                 <div style={{'width': '50%'}}>
                     <img src={catImage} width='100%'/>
                 </div>
-            </div>
+            </section>
         </>
     )
 }

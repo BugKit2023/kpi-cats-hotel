@@ -5,6 +5,7 @@ import {WhyUs} from "./components/why-us/WhyUs";
 import {Booking} from "./components/booking/Booking";
 import {WhoWeAre} from "./components/who-we-are/WhoWeAre";
 import {ModalWindow} from "./components/modal-window/ModalWindow";
+import {Footer} from "./components/footer/Footer";
 
 function App() {
 
@@ -23,14 +24,15 @@ function App() {
     return (
         <>
             <Header/>
-            <div>
+            <main>
                 {isModalWindowOpen && (
                     <ModalWindow message={modalWindowMessage} onClose={handleCloseModalWindow} />
                 )}
                 <WhoWeAre onModalWindowOpen={handleShowModalWindow}/>
                 <WhyUs/>
                 <Booking onModalWindowOpen={handleShowModalWindow}/>
-            </div>
+            </main>
+            <Footer/>
         </>
     );
 }
