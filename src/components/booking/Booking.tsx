@@ -56,6 +56,11 @@ export const Booking = ({onModalWindowOpen}) => {
         <section>
             <div id="booking" className="booking-container">
                 <h1 style={{fontSize: '22px', marginBottom: '30px'}}>BOOKING</h1>
+                <div style={{fontSize: '18px', marginBottom: '30px'}}>
+                    Book a room at our hotel in just a few simple steps! Choose your preferred dates, specify the
+                    number of guests, and select the perfect room. After completing your booking, you will receive
+                    a <span style={{fontWeight: 'bold'}}>unique booking code</span>, which you will need to present at the reception upon check-in.
+                </div>
                 {currentStep === 1 && (
                     <div className="step">
                         <InputCatsNumber cats={cats} setCatsNumber={setCats}/>
