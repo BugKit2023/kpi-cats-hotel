@@ -1,0 +1,25 @@
+#who-we-are {
+    background-color: #5BE3A8;
+    display: flex;
+    align-items: center;
+}
+#text {
+    color: #18282E;
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+}
+#form-container {
+    max-width: 200px;
+    margin: auto;
+    padding: 20px;
+}
+#form-input {
+    width: 100%;
+    padding: 8px;
+}
+#button-container {
+    margin: 5px;
+    text-align: center;
+}
+

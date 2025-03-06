@@ -1,34 +1,5 @@
 import React, {ChangeEvent, FormEvent, useState} from "react";
 
-export const formContainer: React.CSSProperties = {
-    maxWidth: '200px',
-    margin: 'auto',
-    padding: '20px'
-}
-export const formInput: React.CSSProperties = {
-    width: '100%',
-    padding: '8px'
-}
-export const label: React.CSSProperties = {
-    color: '#18282E',
-    fontFamily: 'Roboto',
-    marginBottom: '5px',
-    fontSize: '12px'
-}
-export const buttonContainer: React.CSSProperties = {
-    margin: '5px',
-    textAlign: 'center'
-}
-export const button = {
-    color: 'white',
-    fontFamily: 'Roboto',
-    padding: '10px 15px',
-    backgroundColor: '#18282E',
-    cursor: 'pointer',
-    border: 'none',
-    borderRadius: '4px'
-}
-
 export const EmailForm = ({onModalWindowOpen}) => {
     const [email, setEmail] = useState('');
 
@@ -44,10 +15,10 @@ export const EmailForm = ({onModalWindowOpen}) => {
 
     return (
         <>
-            <div style={formContainer}>
+            <div id="form-container">
                 <form onSubmit={handleSubmit}>
-                    <div style={label}>
-                        <label htmlFor="email">Enter your email:</label>
+                    <div>
+                        <label htmlFor="email" className="label">Enter your email:</label>
                     </div>
                     <div>
                         <input
@@ -56,14 +27,12 @@ export const EmailForm = ({onModalWindowOpen}) => {
                             onChange={handleEmailChange}
                             required
                             placeholder="Email"
-                            style={formInput}
+                            id="form-input"
                         />
                     </div>
 
-                    <div style={buttonContainer}>
-                        <button
-                            type="submit"
-                            style={button}>
+                    <div id="button-container">
+                        <button type="submit">
                             Send
                         </button>
                     </div>

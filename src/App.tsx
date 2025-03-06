@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import './App.scss';
 import {Header} from "./components/header/Header";
 import {WhyUs} from "./components/why-us/WhyUs";
-import {WhatWeOffer} from "./components/what-we-offer/WhatWeOffer";
 import {Booking} from "./components/booking/Booking";
 import {WhoWeAre} from "./components/who-we-are/WhoWeAre";
 import {ModalWindow} from "./components/modal-window/ModalWindow";
@@ -30,8 +29,7 @@ function App() {
                 )}
                 <WhoWeAre onModalWindowOpen={handleShowModalWindow}/>
                 <WhyUs/>
-                <WhatWeOffer/>
-                <Booking/>
+                <Booking onModalWindowOpen={handleShowModalWindow}/>
             </div>
         </>
     );

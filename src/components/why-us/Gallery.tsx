@@ -26,11 +26,11 @@ const imageName: React.CSSProperties = {
 export const Gallery = () => {
     return (
         <Swiper spaceBetween={10} slidesPerView={3} loop={true}>
-            <div style={galleryContainer}>
+            <div id="gallery-container">
                 {gallery.map((image, index) => (
                     <SwiperSlide key={index}>
-                        <img src={image.src} alt={image.alt} style={imageItem}/>
-                        <div style={imageName}>{image.name}</div>
+                        <img src={image.src} alt={image.alt} className="image-item"/>
+                        <div className="image-name">{image.name}</div>
                     </SwiperSlide>
                 ))}
             </div>

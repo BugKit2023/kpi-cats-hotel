@@ -7,3 +7,28 @@
   text-decoration: none;
   color: inherit;
 }
+
+.label {
+  color: #18282E;
+  font-family: 'Roboto';
+  font-size: 12px;
+  margin-top: 7px;
+  text-align: start !important;
+  font-weight: normal;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #18282E;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: 'Roboto';
+}
+
+button:hover {
+  background-color: #006262;
+}
