@@ -1,5 +1,10 @@
 import React, {ChangeEvent, FormEvent, useState} from "react";
 
+export const formContainer = {
+    maxWidth: '200px',
+    margin: 'auto',
+    padding: '20px'
+}
 export const formInput = {
     width: '100%',
     padding: '8px'
@@ -24,7 +29,7 @@ export const button = {
     borderRadius: '4px'
 }
 
-export const EmailForm = () => {
+export const EmailForm = ({onModalWindowOpen}) => {
     const [email, setEmail] = useState('');
 
     const handleEmailChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -34,12 +39,12 @@ export const EmailForm = () => {
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         setEmail('');
-        alert('Thanks! We will contact you.');
+        onModalWindowOpen('Thanks! We will contact you.');
     };
 
     return (
         <>
-            <div style={{maxWidth: '200px', margin: 'auto', padding: '20px'}}>
+            <div style={formContainer}>
                 <form onSubmit={handleSubmit}>
                     <div style={label}>
                         <label htmlFor="email">Enter your email:</label>

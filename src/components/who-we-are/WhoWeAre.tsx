@@ -15,7 +15,7 @@ const text: React.CSSProperties = {
     fontWeight: 'bold'
 }
 
-export const WhoWeAre = () => {
+export const WhoWeAre = ({onModalWindowOpen}) => {
     return (
         <>
             <div id="who-we-are" style={container}>
@@ -24,7 +24,7 @@ export const WhoWeAre = () => {
                         <div>KOTEL</div>
                         <div>Where comfort and luxury meet for your furry friends!</div>
                     </div>
-                    <EmailForm/>
+                    <EmailForm onModalWindowOpen={onModalWindowOpen}/>
                 </div>
                 <div style={{'width': '50%'}}>
                     <img src={catImage} width='100%'/>
