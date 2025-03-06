@@ -9,7 +9,7 @@ export const WhoWeAre = ({onModalWindowOpen}) => {
             <section id="who-we-are">
                 <div style={{'width': '50%'}}>
                     <div id="text" >
-                        <div>KOTEL</div>
+                        <h1 style={{'marginBottom': '10px', 'fontSize':'26px'}}>KOTEL</h1>
                         <div>Where comfort and luxury meet for your furry friends!</div>
                     </div>
                     <EmailForm onModalWindowOpen={onModalWindowOpen}/>
